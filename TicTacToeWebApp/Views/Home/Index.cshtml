@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Tic Tac Toe";
+}
+<br />
+<div id="game" class="container">
+    @using (Ajax.BeginForm("Index", new AjaxOptions { UpdateTargetId = "game" }))
+    {
+
+       
+
+
+
+<div class="form-horizontal bg-text">
+    <h1>Tic Tac Toe</h1>
+    @if (ViewBag.Error != null)
+    {
+    <div class="alert alert-warning alert-dismissable show" role="alert">
+        <strong>@ViewBag.Error</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    }
+
+    <div class="form-group">
+        <input placeholder="Player One Name" class="form-control" id="p1Name" type="text" name="firstPlayerName">
+    </div>
+    <div class="form-group">
+        <input placeholder="Player Two Name" class="form-control" id="p2Name" type="text" name="secondPlayerName">
+    </div>
+    <div class="form-group">
+        <label for="bSize">Board Size:</label>
+        <input class="form-control size-input" id="bSize" name="boardSize" />
+    </div>
+    <button type="submit" class="btn btn-warning btn-sm ">Start</button>
+</div>
+    }
+</div>

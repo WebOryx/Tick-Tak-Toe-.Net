@@ -1,0 +1,108 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-image {
+    /* The image used */
+          background-image: url("background.jpg");
+    
+    /* Add the blur effect */
+  
+    
+    /* Full height */
+    height: 100%; 
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  
+  h1, p {
+    text-align: center;
+  }
+  
+  input, textarea {
+    width: 100%;
+    color: white!important;
+  }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.678); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 50%;  padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .btn-ttt {
+      background: #db8730;
+      border: none;
+  }
+
+  
+.main-btn {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .size-input{
+      width: 50px!important;
+      display: inline!important;}
+  
+  .form-group input::placeholder{
+    color: #fff;
+    
+  }
+  .form-group input{
+    background-color: transparent;
+  
+  }
+  
+
+  
+.td-bg {
+    background: #db8730;
+  }
+  
+  .td-color {
+    color: rgb(179, 179, 179);
+  }
+  
+  .main-game {
+    margin-top: 30vh;
+  }
+  
+  img {
+    width: 100px;
+    height:100px;
+  }
+  
+  .btn.main-btn {
+  color: white;
+  background: #bb723d;
+  
+  border: .5px solid rgb(161, 161, 161) !important;
+  
+  }
+  
+  
+  .main-btn:hover{
+    background: white!important;
+  }
+  

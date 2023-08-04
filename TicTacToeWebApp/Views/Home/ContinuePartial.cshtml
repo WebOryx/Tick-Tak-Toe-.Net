@@ -1,0 +1,17 @@
+﻿@model string
+
+
+<div class="bg-text">
+    @if (Model == "Draw")
+    {
+        <h1>Draw!</h1>
+    }
+    else
+    {
+        <h1>Congratulations! @Model Wins</h1>
+    }
+    @Ajax.ActionLink("Continue To Play", "Continue",
+          new { name = Model },
+        new AjaxOptions { UpdateTargetId = "game" }, new { @class = "btn btn-warning btn-sm" })
+    @Html.ActionLink("New Game", "Index", null, new { @class = "btn btn-primary btn-sm" })
+</div>
